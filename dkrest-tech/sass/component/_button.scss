@@ -1,0 +1,108 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: $default-font-size;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;  
+        transition: all .5s;
+        position: relative;
+        animation-fill-mode: backwards;
+        text-transform: uppercase;
+
+        //for form
+        border: none;
+        cursor: pointer;
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-1;
+    }
+
+    &--black {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 .5rem 1rem rgba($color-primary, .9);
+    }
+
+    &:active,
+    :focus, {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-primary, .9);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 100px;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    &--white::after {
+        background-color: $color-white;
+        color: $color-grey-1;
+    }
+
+    &--black::after {
+        background-color: $color-black;
+        color: $color-white;
+    }
+
+    &:hover::after {
+        opacity: 0;
+        transform: scaleX(1.2) scaleY(1.5);
+    }
+
+    &--animated {
+        animation: moveInBtn 1s ease .75s;
+    }
+
+
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-grey-1;
+        display: inline-block;
+        border-bottom: 1px solid $color-primary;
+        padding: 1rem;
+        transition: all .2s;
+        border-radius: 2px;
+        font-weight: 700;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-primary, .2);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 2rem 4rem rgba($color-primary, .2);
+    }
+}
+
+

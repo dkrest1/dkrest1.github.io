@@ -1,0 +1,127 @@
+.footer {
+    padding:10rem 0;
+    background-color: #c0c0c0;
+    font-size: 1.4rem;
+    color: $color-primary;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top: -10rem;
+
+        @include respond(tab-port) {
+            margin-bottom: -1rem;
+        }
+    }
+
+    &__logo-size {
+        height: auto;
+        width: 25rem;
+        transform: scale(2);
+    }
+
+    &__navigation {
+        border-top: 1px solid $color-grey-dark;
+        padding: 2rem;
+        display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__icon {
+        text-align: center;
+       
+        &-paragraph {
+            font-style: italic;
+            font-size: 2rem;
+            font-weight: 400;
+            background-color: rgba($color-primary, .8);
+            color: $color-white;
+            display: block;
+            border-radius: 4px;
+            width: 90%;
+            margin-top: 2rem;
+        }
+
+        &-list {
+            list-style: none;
+            margin-top:2rem;
+        }
+
+             
+        &-item {
+            display: inline-block;
+            margin-right: 6rem;
+            
+        }
+
+
+        &-link {
+            &,
+            &:link i,
+            &:visited i {
+                font-size: 4rem;
+                text-decoration: none;
+                color: rgba($color-primary, .9);
+                transition: all .3s;
+            }
+
+            &:hover i,
+            &:active i {
+                transform: translateY(-3px) scale(1.2);
+            }
+        
+        }
+
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $color-primary;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:visited {
+            transform: rotate(3deg) scale(1.2);
+            color: $color-black;
+
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid $color-grey-dark;
+        float: right;
+        padding: 2rem;
+        width: 80%;
+
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
+    }
+}
