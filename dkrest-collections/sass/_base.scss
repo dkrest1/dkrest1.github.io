@@ -1,0 +1,61 @@
+// color variables for website
+$color-primary: #07689f;
+$color-primary-light: #0988d0;
+$color-primary-dark: #05486e;
+
+$color-secondary: #a2d5f2;
+
+$color-grey-light-1: #fafafa;
+$color-grey-light-2: #e1e1e1;
+$color-grey-light-3: #c7c7c7;
+
+$color-grey-dark-1: #9d9d9d;
+$color-grey-dark-2: #bfbfbf;
+$color-grey-dark-3: #3f3f3f;
+$color-grey-dark-4: #777;
+
+
+//BREAK POINT FOR MEDIA QUERY
+$bp-largest: 75em; // 1200px / 16
+$bp-large: 62.5em; // 1000px / 16
+$bp-medium: 56.25em; //900px / 16
+$bp-small: 43.75em; //700px / 16
+$bp-smaller: 37.5em; //600px / 16
+$bp-smallest: 28.125em; //450px / 16
+
+
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  //global font-size 1rem = 10px
+
+    @media screen and (max-width: $bp-largest) {
+        font-size: 50%; // font-size 1rem = 8px
+    }
+
+    @media screen and (max-width: $bp-smaller) {
+        font-size: 37.5%; // font-size 1rem = 6px
+    }
+
+
+
+    
+}
+
+body {
+    font-family: "nunito", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark-4;
+}
+
+

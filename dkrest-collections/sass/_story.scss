@@ -1,0 +1,46 @@
+.story {
+   grid-column: 2 / span 10;
+
+   margin: 20rem 0;
+
+   @media screen and (max-width: $bp-largest) {
+      margin: 10rem 0;
+  } 
+
+   &__container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(35rem, 1fr));
+      grid-column-gap: 6rem;
+
+      @media screen and (max-width: $bp-medium) {
+         display: grid;
+         grid-template-columns: minmax((40rem, 1fr));
+        
+      }
+   }
+
+   .customer {
+      display: flex;
+      margin-top: 10rem;
+
+
+      &__image {
+         width: 10rem;
+         height: 10rem;
+         border-radius: 50%;
+         margin-right: 2rem;
+      }
+
+      &__text {
+         font-size: 1.6rem;
+
+         @media screen and (max-width: $bp-smaller) {
+            font-size: 1.4rem;
+           
+         }
+
+    
+      }
+   }
+
+}

@@ -1,0 +1,43 @@
+.features {
+    grid-column: 2 / span 10;
+    margin: 15rem 0;
+
+    @media screen and (max-width: $bp-medium) {
+        margin: 10rem 0;
+    }
+    
+   
+  
+    .feature-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 10rem;
+
+        @media screen and (max-width: $bp-smaller) {
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        }
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__icon {
+            fill: $color-primary;
+            height: 4.5rem;
+            width: 4.5rem;
+            margin-bottom: 2rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            align-self: center;
+            margin-top: 1.5rem;
+
+            
+
+        }
+    }
+}

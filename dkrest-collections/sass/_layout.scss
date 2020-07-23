@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-rows: 100vh repeat(4, min-content);
+    grid-template-columns: repeat(12, minmax(9.5rem, 1fr));
+    background-color: $color-grey-light-1;
+
+    
+    @media screen and (max-width: $bp-large) {
+        display: grid;
+        grid-template-rows: 100vh repeat(4, min-content);
+        grid-template-columns: repeat(12, minmax(8rem, 1fr));
+    }
+
+    @media screen and (max-width: $bp-medium) {
+        display: grid;
+        grid-template-rows: 80vh repeat(4, min-content);
+        grid-template-columns: repeat(12, minmax(4rem, 1fr));
+    }
+
+
+    @media screen and (max-width: $bp-smaller) {
+        display: grid;
+        grid-template-rows: 70vh repeat(4, min-content);
+        grid-template-columns: repeat(12, minmax(4.5rem, 1fr));
+    }
+
+
+}

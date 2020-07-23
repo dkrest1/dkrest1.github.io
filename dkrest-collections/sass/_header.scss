@@ -1,0 +1,144 @@
+.header {
+    grid-column: 1 / span 12;
+
+    
+    background: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)),
+        url(../img/hero.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 4rem;
+    margin: 3rem;
+
+    @media screen and (max-width: $bp-large) {
+        padding: 1.5rem;
+        margin-left: 0;
+    }
+
+
+
+    &__row-1 {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+
+        @media screen and (max-width: $bp-large) {
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+           align-content: space-between;
+          
+        }
+
+    
+    }
+
+    &__row-2 {
+        transform: translateY(55%);
+
+        @media screen and (max-width: $bp-large) {
+            transform: translateY(20vh);
+        }
+
+        @media screen and (max-width: $bp-smaller) {
+            transform: translateY(15vh);
+        }
+    
+    }
+
+    &__logo {
+       height: 6rem;
+
+    }
+
+    &__search {
+        align-self: flex-start;
+        flex: 0 0 38%;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-input {
+            width: 90%;
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin-right: -3rem;
+            color: inherit;
+            background-color: #fff;
+            border-radius: 10rem;
+            padding: 1rem 2rem;
+            border: none;
+            transition: all .2s;
+
+    
+            &:focus {
+                width: 100%;
+                outline: none;
+
+            }
+        }
+
+        &-icon {
+            height: 2rem;
+            width: 2rem;
+            fill: $color-grey-dark-4;
+            outline: none;
+            border: none;
+
+        }
+    }
+
+    &__nav {
+    
+        @media screen and (max-width: $bp-medium) {
+            flex: 0 0 100%;
+           text-align: center;
+           margin-top: 3rem;
+        }
+
+        &-list {
+           list-style: none;
+        }
+
+        &-item {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 2.5rem;
+
+                @media screen and (max-width: $bp-large) {
+                    margin-right: 1.5rem;
+                }
+            
+            }    
+
+            &:active {
+                transform: translateY(2px);
+            
+            }        
+        }
+
+        &-link,
+        &-link:link,
+        &-link:visited {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #fff;
+            padding: 1.2rem;
+            outline: none;
+            transition: all .2s;
+
+            @media screen and (max-width: $bp-large) {
+                font-size: 1.5rem;
+                padding: 1.1rem;
+            }
+        
+           
+            &:hover {
+                background-color: $color-primary-dark;
+            }
+            
+        }
+    }
+}
