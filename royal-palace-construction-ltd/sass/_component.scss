@@ -1,0 +1,67 @@
+//////////////////////////////////////////////////////////////////
+//MIXENS
+.text-center {
+    text-align: center;
+}
+
+///////////////////////////////////////////////////////////////////
+//BTN COMPONENT
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    border-radius: 2px;
+    box-shadow: 0 2rem 4rem rgba($color-black, .4);
+    transition: all .2s;
+
+    @media only screen and(max-width: $bp-medium) {
+        font-size: 1.8rem;
+    }
+    
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 1rem rgba($color-black, .4);
+}
+
+.btn--white {
+    background-color: $color-white;
+    color: $color-primary;
+}
+
+.btn--blue {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.btn-text,
+.btn-text:link,
+.btn-text:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: .5rem;
+    border-bottom: 1px solid $color-primary;
+    transition: all .2s;
+}
+
+.btn-text:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+}
+
+.btn-text:active {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 1rem rgba($color-black, .4);
+}
+

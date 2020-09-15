@@ -1,0 +1,40 @@
+
+/////////////////////////////////////////////////////////////////////////////////////
+//SUB-HEADING TITLE
+.sub-heading-1 {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: $font-heading;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid $color-primary;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 2.5rem;
+    }
+
+}
+
+.sub-heading-2 {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: $font-heading;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 2.5rem;
+    }
+}
+
+.sub-heading-3 {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 1.5rem;
+    }
+}

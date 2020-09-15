@@ -1,0 +1,198 @@
+//About-us section
+.about-us {
+    grid-column: 2 / 8;
+   
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 2 / -1;
+        margin: 15rem 2rem;
+    }
+
+    margin: 15rem 5rem;
+
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-medium) {
+           margin: 1rem 0;
+        }
+    }
+
+    &__heading {
+
+        @media only screen and (max-width: $bp-medium) {
+            text-align: center;
+        }
+    
+    }
+
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//Contact form section
+.contact-form {
+    grid-column: 8 / 14;
+    background: linear-gradient(to right bottom, rgba($color-primary-light, .90), rgba($color-primary-dark, .90));
+    margin: 10rem 2rem;
+    justify-self: center;
+    width: 50rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 45rem;
+        grid-column: 2 / 14;
+        grid-row: 6 / 7;
+        margin: 10rem auto;
+    }
+
+    &__box {
+        font-size: 1.4rem;
+        font-family: $font-display;
+        height: min-content;
+        width: 38rem;
+        padding: 3rem;
+        margin: 6rem auto;
+        border-radius: 3px;
+        background-color: $color-gray-light-2;
+        box-shadow: 0rem 1rem 2rem rgba($color-black, .4);
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 33rem;
+        }
+        
+
+        .form__group {
+            margin-bottom: 1.5rem;
+        }
+
+    }
+
+    &__input {
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        padding: .8rem 1.4rem;
+    }
+
+  
+
+
+    &__textarea {
+        resize: none;
+        width: 100%;
+        font-size: inherit;
+        font-family: inherit;
+        padding: 1rem;
+    }
+
+    &__submit {
+        width: 100%;
+        font-size: inherit;
+        padding: 1.4rem;
+        background-color: $color-primary;
+        color: $color-white;
+        border: none;
+        transition: all .2s;
+    }
+
+    &__submit:active {
+        background-color: $color-primary-dark;
+    }
+
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+//Feature section
+.features {
+    grid-column: 3 / 13;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem;
+    align-items: start;
+
+    margin: 15rem 0rem;
+    
+
+
+    .feature {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 2.5rem;
+       
+
+
+        &__icon {
+            height: 4.5rem;
+            width: 4.5rem;
+            fill: $color-primary;
+            transform: translateY(-1.5rem);
+        }
+
+        &__text {
+            grid-column: 2 / span 1;
+            font-size: 1.6rem;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////
+//Testimonial
+.testimonial {
+
+    grid-column: 2 / -1;
+   
+    
+    &__picture {
+        grid-column: 2 / 8;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 2 / -1;
+            grid-row: 5 / 6;
+            background-position: center;
+            margin: 2rem 0;
+        }
+
+      
+        margin: 2rem 0;
+
+        background: linear-gradient(rgba($color-primary, .50), rgba($color-primary, .50)),
+        url('../img/customer.jpg');
+        background-size: cover;
+       
+    }
+
+    &__quote {
+        grid-column: 8 / -1;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: 2 / -1;
+            grid-row: 4 / 5;
+        }
+
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        background-color: $color-gray-light-2;
+        margin: 2rem 0;
+        padding: 6rem 6vh;
+        
+        &-heading-2 {
+            justify-self: flex-start;
+            margin-top: 6rem;
+            color: $color-primary;
+            font-style: italic;
+        }
+
+        &-text {
+            font-size: 1.6rem;
+            margin-bottom: 5rem;
+        }
+
+        &-btn {
+            padding: 1.5rem 3.5rem;
+        }
+    }
+}

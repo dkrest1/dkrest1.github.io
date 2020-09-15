@@ -1,0 +1,73 @@
+//variables 
+//colors
+$color-primary:#071a52;
+$color-primary-light:#0b2981;
+$color-primary-dark: #030b23;
+//#101d2c;
+
+//color-secondary
+$color-secondary: #00adb5;
+
+$color-white: #fff;
+$color-black: #000;
+
+//other colors light
+$color-gray-light-1: #eeeeee;
+$color-gray-light-2: #f7f7f7;
+//other colors dark
+$color-gray-dark-1: #333;
+$color-gray-dark-2: #999;
+$color-gray-dark-3: #777;
+
+///////////////////////////////////////////////////////////////////
+//Fonts
+$font-heading: 'Open Sans', sans-serif;
+$font-display: 'Roboto', sans-serif;
+
+
+/////////////////////BREAKPOINT////////////////////////////////////
+$bp-largest: 75em; //1200px 1em === 16px
+$bp-large: 68.75em; //1100px 1em === 16px
+$bp-medium: 56.25em; //900px 1em === 16px
+$bp-small: 37.5em; //600px 1em === 16px
+$bp-smallest: 29.5em; // 472px 1em ===16px
+
+///////////////////////////////////////////////////////////////////
+//basic reset
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  //10px is equal to 1rem
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 56.25%; //9px is equal to 1rem
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; //8px is equal to 1rem
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 43.75%; //7px is equal to 1rem
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 37.5%; //6px is equal to 1rem
+    }
+   
+}
+
+body {
+    font-family: $font-display;
+    line-height: 1.6;
+    font-weight: 400;
+    color: $color-gray-dark-3;
+}
+
