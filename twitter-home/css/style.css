@@ -1,0 +1,251 @@
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1rem is equal to 10px*/   
+}
+
+@media only screen and (max-width: 25em) {
+
+    html {
+        font-size: 56.25%;
+    }
+}
+
+
+body {
+    font-family: 'Arimo', sans-serif;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+/* container */
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* twitter header image */
+.twitter-header {
+    max-width: 100%;
+    height: 15rem;
+    max-height: 17rem;
+    background-image: url(../img/masion.jpg);
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 13rem;
+}
+
+
+.twitter-profile {
+    position: absolute;
+    top: 10rem;
+    left: 1.5rem;
+}
+
+.profile-image {
+    max-height: 12rem;
+    height: 11rem;
+    max-width: 12rem;
+    width: 11rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.username {
+    color: rgba(51, 51, 51, .7);
+    font-weight: 500;
+}
+
+.username-at {
+    display: inline-block;
+   margin: .8px;
+   transform: translateY(-1.5px);
+   font-size: 1.4rem;
+}
+
+.edit-profile-box {
+    position: absolute;
+    top: 17rem;
+    right: 3rem;
+}
+
+.edit-profile {
+   height: 3.5rem;
+   width: 11rem;
+   padding: .6rem 2rem;
+   border: 1px solid #333;
+   border-radius: 8rem;
+}
+
+.header {
+    color: rgba(51, 51, 51, .7);
+    margin-top: 3rem;
+    padding: 0 1.6rem;
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+.about {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.header-location {
+    margin-bottom: .6rem;
+}
+
+.bold {
+    color: #333;
+    font-weight: 700;
+    margin-right: .2rem;
+}
+
+.location-text {
+    margin-right: 2rem;
+}
+
+.birthday-group {
+    margin-right: 2rem;
+}
+
+.fa-icon {
+    display: inline-block;
+    margin-right: .8rem;
+}
+
+.follow {
+    margin-top: 1rem;
+}
+
+.following {
+    margin-right: 2rem;
+}
+
+
+.nav {
+    margin-top: 2.5rem;
+    border-bottom: 1px solid rgba(101, 119, 134, .2);
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #657786;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0 1rem 1.6rem 1rem;
+    line-height: 3;
+    transition: all .2s;
+}
+
+.active a {
+    color:  #1DA1F2;
+}
+.active,
+.nav__link:hover {
+    border-bottom: 3.5px solid #1DA1F2;
+    color: #1DA1F2;
+}
+
+/* tweet-main */
+
+.tweet {
+    margin-top: 1.2rem;
+    padding: 0 1rem .8rem 1rem;
+    border-bottom: 1px solid rgba(101, 119, 134, .2);
+    line-height: 1.4;
+
+    display: flex;
+}
+
+.tweet__image {
+   transform: translateY(6px);
+   margin-right: 1.5rem;
+}
+
+.tweet__pin-icon {
+    display: inline-block;
+    transform: translate(5rem, -1rem);
+    font-size: 1.1rem;
+    color: #657786;
+}
+
+.tweet__pic {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+}
+
+.tweet__light-header {
+    color: #657786;
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+
+.tweet__name {
+    font-weight: 600;
+}
+
+.tweet__username {
+    color: #657786;
+}
+
+
+.tweet__text-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    transform: translateY(-2.3rem);
+    color:  rgba(51, 51, 51, .95);
+}
+
+.tweet__body {
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.body__hashtag {
+    color:  #1DA1F2;
+}
+
+.tweet__icons {
+    display: flex;
+}
+
+.tweet__icon {
+    color:  rgba(51, 51, 51, .95);
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-right: 4rem;
+}
+
+.icon-margin {
+    margin-right: .8rem;
+}
+
+.gold {
+    color: gold;
+}
+
