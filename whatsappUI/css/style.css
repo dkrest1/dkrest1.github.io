@@ -1,0 +1,36 @@
+
+.header {
+    background-color: #075E54;
+}
+
+.navigation {
+    background-color: #075E54;
+}
+
+.fa-camera {
+    font-size: 20px;;
+}
+
+.notification {
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    color: #075E54;
+}
+
+.chat-border {
+    border-bottom: 3.5px solid #fff;
+    width: 110px;
+    margin-bottom: .008px !important;
+
+}
+
+.line-bottom {
+    border-bottom: 1px solid #eee;
+    width: calc(100% - 60px);
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+}
