@@ -1,0 +1,413 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* css custom properties */
+:root {
+    --primary-color-light: #d8d3ee;
+    --primary-color-dark: #0d0448;
+    --secondary-color: #fafafc;
+    --tertiary-color-light: #e07b82;
+    --tertiary-color-dark: #c23e54;
+
+    /* media Point Breaking Point */
+    /* --bp-large: 34.375em; 550px/16 */
+    /* --bp-medium: 28.125em; 450px/16 */
+    /* --bp-medium: 25em; 400px/16 */
+
+}
+
+html {
+    box-sizing: border-box;
+     font-size: 62.6%; /* 1rem ==== 10px */
+}
+
+/* writing media query for the general html */
+@media screen and (max-width: 34.375em) {
+    html {
+        font-size: 50%; /* 1rem === 8px*/
+    }
+}
+
+body {
+    font-family: 'lato', sans-serif;
+    background-color: var(--primary-color-dark);
+    /* temporary */
+    color: #fff;
+    
+}
+
+.container {
+    margin: 3rem auto;
+    max-width: 60rem;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+   font-size: 4.5rem;
+   margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 28.125em) {
+    .main-title {
+        font-size: 4rem;
+    }
+}
+
+.sub-title {
+   font-size: 1.6rem;
+   word-spacing: 1.3px;
+   color: var(--primary-color-light);
+   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 28.125em) {
+    .sub-title {
+        font-size: 1.5rem;
+        word-spacing: 1.2px;
+    }
+}
+
+
+.connects {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+/* MEdia query for connects */
+@media screen and (max-width: 34.375em) {
+
+    .connects {
+        max-width: 50rem;
+    }
+}
+
+@media screen and (max-width: 28.125em) {
+
+    .connects {
+        font-size: 1.2rem;
+        max-width: 42rem;
+    }
+}
+
+@media screen and (max-width: 25em) {
+
+    .connects {
+        font-size: 1.1rem;
+        max-width: 38rem;
+    }
+}
+
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    transition: all .2s;
+    padding: 1rem 2rem ;
+}
+
+/* Media query for .connect */
+@media screen and (max-width: 28.125em) {
+
+    .connect {
+       padding: .8rem 1.8rem;
+    }
+}
+
+
+
+.connect:hover {
+    background-color: var(--tertiary-color-light);
+    border-radius: 8px;
+}
+
+.email-link {
+    text-decoration: none;
+    color: var(--primary-color-light);
+}
+
+.location-address,
+.phone-number,
+.email {
+    margin-top: 1.3rem;
+}
+
+.contact-form {
+    padding: 2rem 2.5rem;
+    max-width: 55rem;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+/* Media Query for .contact-form */
+
+@media screen and (max-width: 34.375em) {
+
+    .contact-form {
+        padding: 2.5rem 3rem;
+        max-width: 50rem;
+    }
+}
+
+
+@media screen and (max-width: 28.125em) {
+
+    .contact-form {
+        padding: 1.5rem 2rem;
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 25em) {
+
+    .contact-form {
+        padding: 1.5rem 2rem;
+        max-width: 36rem;
+    }
+}
+
+
+.form-title {
+    font-size: 1.6rem;
+    color: #333333ee;
+}
+/* Media query for .form-title */
+@media screen and (max-width: 28.125em) {
+
+    .form-title {
+        font-size: 1.4rem;
+    }
+}
+
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+/* media query for .row-1 */
+@media screen and (max-width: 34.375em) {
+
+    .row-1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.col-1 {
+    flex: 0 1 45%;
+}
+
+
+
+.col-2 {
+    float: 0 1 45%;
+}
+
+
+label {
+    display: block;
+    color: #333333;
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+}
+
+/* Media query for label */
+
+@media screen and (max-width: 28.125em) {
+
+    label {
+        font-size: 1.2rem;
+    }
+}
+
+.form-group input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    color: #333;
+    font-family: "lato", sans-serif;
+    border: none;
+    background-color: #f1f1f1f5;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+/* Media query for .form-group input */
+@media screen and (max-width: 28.125em) {
+
+    .form-group input {
+      
+        padding: .6rem 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid var(--tertiary-color-light);
+}
+
+.comment-label {
+    margin-bottom: .4rem;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+
+/* Media query for .comment-label */
+@media screen and (max-width: 34.375em) {
+
+    .comment-label {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+
+
+#message {
+    background-color: #f1f1f1f5;
+    border: none;
+    padding: 1rem;
+    height: 16rem;
+    width: 25rem;
+    resize: none;
+    cursor: pointer;
+}
+
+/* Media query for #message */
+@media screen and (max-width: 34.375em) {
+
+    #message {
+       width: 100%;
+       margin-bottom: 2.5rem;
+    }
+}
+
+#message:focus {
+    outline: none;
+    border: 3px solid var(--tertiary-color-light);
+}
+
+.icon {
+    position: absolute;
+    color: #333333ee;
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    padding: 0 1rem; 
+    transition: all .2s;
+}
+
+@media screen and (max-width: 28.125em) {
+
+    .icon  {
+        font-size: 1.2rem;
+        padding: 0 .8rem;
+    }
+}
+
+/* I'm working  to animate the icon when the input is focus but it's not working will come back to it later */
+/* input:focus ~ i  {
+    opacity: 0;
+    color: var(--tertiary-color-light);
+} */
+
+.row-2 {
+    color: #333;
+    margin-bottom: 4rem;
+}
+
+.service-title {
+    margin-bottom: 2.5rem;
+}
+
+.service-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-link {
+    text-decoration: none;
+    color: #333333ee;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: #f1f1f1f5;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 8px;
+}
+
+/* Media query for .service-link */
+
+@media screen and (max-width: 28.125em) {
+
+    .service-link {
+        font-size: 1.1rem;
+        padding: .6rem;
+    }
+}
+
+.service-link:hover {
+    border: 3px solid var(--tertiary-color-light);
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 1.2rem 3rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background-color: var(--tertiary-color-light);  
+    border: none; 
+    color: #ffffffc2;
+}
+
+/* Media Query for .submit-btn */
+@media screen and (max-width: 28.125em) {
+
+    .submit-btn {
+        padding: 1rem 2.5rem;
+    }
+}
+
+.submit-btn:focus {
+    outline: none;
+    background-color: var(--tertiary-color-dark);
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+} 
+/* Media query for .copy-right */
+@media screen and (max-width: 28.125em) {
+
+    .copyright {
+        font-size: 1.2rem;
+    }
+}
