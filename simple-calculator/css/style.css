@@ -1,61 +1,143 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  /* 1rem == 10px */
     box-sizing: border-box;
+}
+
+/* writing media query for the font */
+@media screen and (max-width: 25em) {
+    html {
+        font-size: 50%;
+    }
 }
 
 body {
     font-family: 'roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.6rem;
     font-weight: 600;
+    background-color: #0000ff;
+}
+/* writing media query for the body */
+@media screen and (max-width: 25rem) {
+    body  {
+        font-size: 1.4rem;
+    }
 }
 
 .container {
-    margin: 50px auto;
-    max-width: 500px;
-   
-
-
+    margin: 1rem auto;
+    max-width: 50rem;
 }
 
+/* writing media query for the body */
+@media screen and (max-width: 25rem) {
+    .container  {
+        max-width: 40rem;
+    }
+}
+
+
+
+.header {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+/* writing media query for the body */
+@media screen and (max-width: 25rem) {
+    .header  {
+      font-size: 3rem;
+    }
+}
+
+
+
 .calculator__body {
-    height: 620px;
-    width: 400px;
+    margin: 0 auto;
+    width: 40rem;
     background-color: #f4f4f4;
-    border: 8px solid #999;
+    border: .8rem solid #999;
     border-radius: 0% 0% 20% 20% / 70% 70% 70% 70%;
     box-shadow:  5px 10px 40px rgba(0, 0, 0, 0.308);
 }
 
+/* writing media query for the .calculator__body */
+@media screen and (max-width: 25rem) {
+    .calculator__body  {
+        width: 35rem;
+    }
+}
+
+
+
 .calculator__screen {
-    height: 100px;
-    width: 350px;
-    padding: 10px;
+    height: 10rem;
+    width: 35rem;
     margin: 10px auto;
     border: 3px solid #999;
-    font-size: 16px;
+    font-size: 1.6rem;
     background-color: #fff;
 }
 
+/* writing media query for the .calculator__screen */
+@media screen and (max-width: 25rem) {
+    .calculator__screen  {
+        width: 30rem;
+        font-size: 1.4rem;
+    }
+}
+
+
+
 .calculator__display {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
     display: block;
     outline: none;
     border: none;
-    padding: 20px 4px;
-    font-size: 25px;
+    font-size: 2.5rem;
    
 }
 
-.table {
-    padding: 20px;
+/* writing media query for the .calculator__display */
+@media screen and (max-width: 25rem) {
+    .calculator__display  {
+       font-size: 2rem;
+    }
 }
 
+
+
+
+.table {
+    padding: 2rem;
+}
+
+/* writing media query for the .table */
+@media screen and (max-width: 25rem) {
+    .table  {
+        padding: 1.5rem;
+    }
+}
+
+
+
 .row {
-display: block;
+    display: block;
 }
 
 .row:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
 }
 
 .column {
@@ -66,27 +148,70 @@ display: block;
     margin-right: 5px;
 }
 
+/* writing media query for the .column:not(:last-child)  */
+@media screen and (max-width: 25rem) {
+    .column:not(:last-child)   {
+        margin-right: 4px;
+    }
+}
+
+
+
 .button {
-    padding: 20px;
+    padding: 2rem;
     outline: none;
     background-color: rgba(0, 0, 0, 0.514);
     color: #fff;
-    font-size: 16px;
+    font-size: 1.6rem;
     cursor: pointer;
 }
 
-.arithmetic-operator {
-    height: 65px;
-    width: 63px;
+/* writing media query for the .button */
+@media screen and (max-width: 25rem) {
+    .button {
+        padding: 1.5rem;
+        font-size: 1.4rem;
+    }
 }
+
+
+
+.arithmetic-operator {
+    height: 6.5rem;
+    width: 6.3rem;
+}
+
+/* writing media query for the .arithmetic-operator */
+@media screen and (max-width: 25rem) {
+    .arithmetic-operator {
+       height: 5.2rem;
+       width: 5.5rem;
+    }
+}
+
+
 
 .equal {
-    width: 110px;
+    width: 11rem;
 }
 
+/* writing media query for the .equal */
+@media screen and (max-width: 25rem) {
+    .equal {
+       width: 9rem;
+    }
+}
+
+
 .copyright {
-    margin-left: 35px;
-    margin-top: 15px;
+    text-align: center;
     font-weight: 300;
     color: #ccc;
+}
+
+/* writing media query for the .arithmetic-operator */
+@media screen and (max-width: 25rem) {
+    .last-row {
+       margin-left: 1.2rem;
+    }
 }

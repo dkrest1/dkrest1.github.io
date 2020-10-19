@@ -3,7 +3,7 @@ function insert(x) {
 }
 
 function clearr() {
-    var  clearr= "";
+    var  clearr = "";
     document.calculatorScreen.display.value = clearr;
 }
 
@@ -17,7 +17,7 @@ function calc() {
     
 function del(){
     var expression = document.calculatorScreen.display.value;
-    document.calculatorScreen.display.value = expression.substring(0, expression.length-1);
+    document.calculatorScreen.display.value = expression.substring(0, expression.length - 1);
 }
 
 /*
